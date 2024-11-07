@@ -54,6 +54,10 @@ public class factorial {
         scanner.close();
     }
 
+    public void cancel() {
+        cancelled = true;
+    }
+
     private class FactorialTask implements Callable<BigInteger> {
         private final int number;
 
